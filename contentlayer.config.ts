@@ -4,7 +4,7 @@ import readingTime from 'reading-time'
 import { slug } from 'github-slugger'
 import path from 'path'
 import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic'
-// Remark packages
+
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import { remarkAlert } from 'remark-github-blockquote-alert'
@@ -14,7 +14,7 @@ import {
   remarkImgToJsx,
   extractTocHeadings,
 } from 'pliny/mdx-plugins/index.js'
-// Rehype packages
+
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeKatex from 'rehype-katex'
@@ -29,7 +29,7 @@ import prettier from 'prettier'
 const root = process.cwd()
 const isProduction = process.env.NODE_ENV === 'production'
 
-// heroicon mini link
+
 const icon = fromHtmlIsomorphic(
   `
   <span class="content-header-link">
