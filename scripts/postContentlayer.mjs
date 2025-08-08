@@ -7,8 +7,8 @@ import siteMetadata from '../data/siteMetadata.js'
 const isProduction = process.env.NODE_ENV === 'production'
 
 /**
-* Count the occurrences of all tags across blog posts and write to json file
-*/
+ * Count the occurrences of all tags across blog posts and write to json file
+ */
 export async function createTagCount() {
   const tagCount = {}
   allBlogs.forEach((file) => {
