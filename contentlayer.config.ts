@@ -179,9 +179,5 @@ export default makeSource({
       rehypePresetMinify,
     ],
   },
-  onSuccess: async (importData) => {
-    const { allBlogs } = await importData()
-    await createTagCount(allBlogs)
-    await createSearchIndex(allBlogs)
-  },
+  
 })
